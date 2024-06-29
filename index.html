@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 text-center">
+                    <a href="#" class="logo-area"><img src="./images/logo/logo.webp" alt="img"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+
+    <section class="banner">
+        <div class="effets">
+            <span><img src="./images/boxes/blur-circle-crop.webp" alt="img"></span>
+            <span><img src="./images/boxes/blur-circle-crop-2.webp" alt="img"></span>
+            <span><img src="./images/boxes/blur-circle.webp" alt="img"></span>
+        </div>
+        <div class="container shadow-b">
+            <div class="row" style="justify-content: center;">
+                <div class="col-lg-9">
+                    <div class="contant" data-aos="fade-down">
+                        <!-- <span class="top-btn"><img src="./images/icons/cir-icon.webp" alt="img">Onchain Capital</span> -->
+                        <div class="text text-center">
+                            <h1>LA NUEVA MANERA DE INVERTIR EN CRIPTOMONEDAS</h1>
+                            <p style="max-width: 986px;" class="mx-auto">Dentro de Onchain Mastery encontrarás el paso a
+                                paso exacto con el que maximizar tus
+                                ganancias en criptomonedas, aun sin tener experiencia previa.</p>
+                        </div>
+                        <div class="video_play">
+                            <div class="video">
+                                <!-- <img src="./images/boxes/video-bg.webp" alt="img"> -->
+                                <iframe id="homePlayer" src="https://player.vimeo.com/video/967623521?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="intro OM"></iframe>
+                                <button class="btn_ripple" onclick="playVideo()" id="heroPlayerBtn">
+                                    <img src="./images/icons/play-icon-2.webp" alt="img" width="36" height="45">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-1"><span>QUIERO RESERVAR MI PLAZA</span></a>
+                        <div class="review">
+                            <div class="images">
+                                <img src="./images/boxes/user-1.webp" alt="img">
+                                <img src="./images/boxes/user-2.webp" alt="img">
+                                <img src="./images/boxes/user-3.webp" alt="img">
+                                <img src="./images/boxes/user-4.webp" alt="img">
+                            </div>
+                            <h6>Únete a nuestros <span>+400</span> inversores</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container clint-logos" data-aos="fade">
+            <div class="effets">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="owl-carousel owl-theme clients-carousel">
+                        <div class="image">
+                            <img style="height: 42px;" src="./images/boxes/clint-1.png" alt="img">
+                        </div>
+                        <div class="image">
+                            <img src="./images/boxes/clint-2.webp" alt="img">
+                        </div>
+                        <div class="image">
+                            <img src="./images/boxes/clint-3.webp" alt="img">
+                        </div>
+                        <div class="image">
+                            <img src="./images/boxes/clint-4.webp" alt="img">
+                        </div>
+                        <div class="image">
+                            <img src="./images/boxes/clint-5.webp" alt="img">
+                        </div>
+                        <div class="image">
+                            <img src="./images/boxes/clint-6.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inner-sec p-t-0" data-aos="fade-up">
+        <div class="container shadow-t">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="./images/boxes/about-images-grid.webp" alt="about-image" style="width: 100%; height: auto; max-width: 570px; display: block;" class="mx-auto">
+                </div>
+                <div class="col-lg-5">
+                    <div class="text d-flex Justift-center align-center" style="height: 100%; flex-direction: column; padding-right: clamp(0px, 5vw, 80px);">
+                        <h3 style="margin-bottom: 26px;">¿QUÉ ES ONCHAIN MASTERY?</h3>
+                        <p style="margin-bottom: 20px;">Onchain Mastery es el Programa Formativo que muestra la <b>metodología más rentable</b> para invertir en criptomonedas, independientemente de tu conocimiento y experiencia previa.
+                        </p>
+                        <p style="margin-bottom: 20px;">El Análisis Onchain es un sistema que consiste en <b>identificar aquellas billeteras
+                            rentables,</b> beneficiándose en tiempo real de sus movimientos.</p>
+                        <p>Este programa es el <b>único en habla hispana</b> que cubre de 0 a 100 cómo obtener
+                            rentabilidades con el Análisis Onchain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inner-sec-2 p-t-0">
+        <div class="shadow-blur"></div>
+        <div class="blur-effect">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="heading" style="margin-bottom: 20px;">
+                        <span class="top-btn"><img src="./images/icons/cir-icon.webp" alt="img">QUÉ INCLUYE</span>
+                    </div>
+                    <div class="inner-boxes">
+                        <div class="timeline">
+                            <ul>
+                                <span class="default-line center-line"></span>
+                                <span class="draw-line"></span>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="inner-box">
+                            <div class="left" data-aos="fade-right">
+                                <div class="box-head">
+                                    <h5>+60 Clases de Especialización</h5>
+                                </div>
+                                <p>Las clases de Onchain Mastery están diseñadas para enseñarte todos los fundamentos
+                                    necesarios para dominar el Análisis Onchain.</p>
+                            </div>
+                            <div class="right first">
+                                <div class="img-wrapper">
+                                    <img src="./images/boxes/timeline-img-1.webp" alt="vector-card" style="width: 100%; height: auto; max-width: 310px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-box">
+                            <div class="left order-lg-last" data-aos="fade-left">
+                                <div class="box-head">
+                                    <h5>Oportunidades de Inversión</h5>
+                                </div>
+                                <p>Tendrás acceso a información Alpha de inversión, con la que adelantarte a los
+                                    movimientos del mercado.</p>
+                            </div>
+                            <div class="right second">
+                                <div class="img-wrapper">
+                                    <img src="./images/boxes/timeline-img-2.webp" alt="vector-card" style="width: 100%; height: auto; max-width: 310px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-box">
+                            <div class="left" data-aos="fade-right">
+                                <div class="box-head">
+                                    <h5>Sesiones en Vivo</h5>
+                                </div>
+                                <p>Sesiones en directo con profesionales de múltiples áreas que te ayudarán a
+                                    convertirte en un profesional en el mercado de las criptomonedas.</p>
+                            </div>
+                            <div class="right">
+                                <div class="img-wrapper">
+                                    <img src="./images/boxes/timeline-img-3.webp" alt="vector-card" style="width: 100%; height: auto; max-width: 310px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-box">
+                            <div class="left order-lg-last" data-aos="fade-left">
+                                <div class="box-head">
+                                    <h5>Eventos Presenciales</h5>
+                                </div>
+                                <p>Como miembro de Onchain Mastery tendrás la oportunidad de acceder a los eventos que
+                                    organizamos alrededor de España durante todo el año.</p>
+                            </div>
+                            <div class="right four">
+                                <div class="img-wrapper">
+                                    <img src="./images/boxes/timeline-img-4.webp" alt="vector-card" style="width: 100%; height: auto; max-width: 310px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-boxes">
+        <div class="animate-circle"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="heading" data-aos="fade-down">
+                        <span class="top-btn"><img src="./images/icons/cir-icon.webp" alt="img">Meetups</span>
+                        <h3>ACCEDE A NUESTRO CÍRCULO DE INVERSORES</h3>
+                        <p>Con eventos presenciales en distintas ciudades, para fomentar el Networking</p>
+                    </div>
+                    <div class="vid-boxes popup-gallery" data-aos="fade">
+                        <div class="serv-box">
+                            <div class="contant">
+                                <div class="video-box">
+                                    <iframe id="video"
+                                        src="https://player.vimeo.com/video/922659758?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                        frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; controls"
+                                        title="Onchain_Madrid_Edit2"></iframe>
+                                    <img src="./images/boxes/event-1.webp" alt="Alt text" class="btn-none" />
+                                    <button class="btn_ripple btn-none" id="play-video"><img
+                                            src="./images/icons/play-icon-2.webp" alt="img"></button>
+                                </div>
+                                <div class="text">
+                                    <h5>Madrid</h5>
+                                    <p>9 de marzo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serv-box">
+                            <div class="contant">
+                                <div class="video-box">
+                                    <iframe id="video2"
+                                        src="https://player.vimeo.com/video/947750323?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                        frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                                        title="Onchain_Madrid_Edit2"></iframe>
+                                    <img src="./images/boxes/event-2.webp" alt="Alt text" class="btn-none2" />
+                                    <button class="btn_ripple btn-none2" id="play-video2"><img
+                                            src="./images/icons/play-icon-2.webp" alt="img"></button>
+                                </div>
+                                <div class="text">
+                                    <h5>Barcelona</h5>
+                                    <p>27 de abril</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serv-box">
+                            <div class="contant">
+                                <div class="video-box">
+                                    <iframe id="video3"
+                                        src="https://player.vimeo.com/video/951482442?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                        frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                                        title="Onchain_Madrid_Edit2"></iframe>
+                                    <img src="./images/boxes/event-3.webp" alt="Alt text" class="btn-none3" />
+                                    <button class="btn_ripple btn-none3" id="play-video3"><img
+                                            src="./images/icons/play-icon-2.webp" alt="img"></button>
+                                </div>
+                                <div class="text">
+                                    <h5>Valencia</h5>
+                                    <p>25 de mayo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="reviews p-t-0">
+        <div class="animate-circle"></div>
+        <div class="blur-effect-2">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="heading">
+                        <span class="top-btn"><img src="./images/icons/cir-icon.webp" alt="img">Este es el
+                            Programa</span>
+                        <h3>DENTRO DE ONCHAIN MASTERY</h3>
+                        <P>La única manera de obtener más de 7 años de experiencia en el mercado de las criptomonedas es
+                            <br> teniendo a las personas correctas al lado.
+                        </P>
+                    </div>
+                    <div class="review-boxes">
+                        <div class="review-box">
+                            <div class="left">
+                                <div class="h5">Fase 1</div>
+                                <h3>Introducción</h3>
+                                <p>Toda metodología excelente se inicia con los fundamentos. <b>Independientemente de que
+                                    seas principiante o avanzado,</b> los principios del mercado permanecen.</p>
+                                <div class="rev-buttons">
+                                    <a href="#" class="btn-2">Fundamentos</a>
+                                    <a href="#" class="btn-2">Mentalidad</a>
+                                    <a href="#" class="btn-2">Comunidad</a>
+                                </div>
+                            </div>
+                            <div class="right" data-aos="fade">
+                                <img src="./images/boxes/rev-1.gif" alt="img">
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="left">
+                                <div class="h5">Fase 2</div>
+                                <h3>Especialización</h3>
+                                <p><b>El análisis Onchain es la metodología más rentable</b> con la que invertir actualmente en
+                                    criptomonedas. Aquí aprenderás a convertirte en un inversor del 1%.</p>
+                                <div class="rev-buttons">
+                                    <a href="#" class="btn-2">Onchain</a>
+                                    <a href="#" class="btn-2">Smart Money</a>
+                                    <a href="#" class="btn-2">Airdrops</a>
+                                </div>
+                            </div>
+                            <div class="right" data-aos="fade">
+                                <img src="./images/boxes/rev-2.gif" alt="img">
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="left">
+                                <div class="h5">Fase 3</div>
+                                <h3>Aplicaciones</h3>
+                                <p>Aprende a <b>moverte de manera inteligente</b> entre las principales plataformas más
+                                    utilizadas por los inversores más rentables.</p>
+                                <div class="rev-buttons">
+                                    <a href="#" class="btn-2">Apps</a>
+                                    <a href="#" class="btn-2">Guías</a>
+                                    <a href="#" class="btn-2">Social Media</a>
+                                </div>
+                            </div>
+                            <div class="right" data-aos="fade">
+                                <img src="./images/boxes/rev-3.gif" alt="img">
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="left">
+                                <div class="h5">Fase 4</div>
+                                <h3>Oportunidades</h3>
+                                <p>Aquí encontrarás el paso a paso con el que <b>identificar aquellas billeteras más
+                                    rentables para replicar sus movimientos.</b></p>
+                                <div class="rev-buttons">
+                                    <a href="#" class="btn-2">Billeteras</a>
+                                    <a href="#" class="btn-2">Alpha</a>
+                                    <a href="#" class="btn-2">Research</a>
+                                </div>
+                            </div>
+                            <div class="right" data-aos="fade">
+                                <img src="./images/boxes/rev-4.gif" alt="img">
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="left">
+                                <div class="h5">Fase 5</div>
+                                <h3>Profundización</h3>
+                                <p>Entrando un paso más allá en el mercado: <b>información poco conocida con la que podrás
+                                    exprimir todas las oportunidades</b> en este nuevo Bull Run.</p>
+                                <div class="rev-buttons">
+                                    <a href="#" class="btn-2">Casos Prácticos</a>
+                                    <a href="#" class="btn-2">VCs</a>
+                                    <a href="#" class="btn-2">Psicología</a>
+                                </div>
+                            </div>
+                            <div class="right" data-aos="fade">
+                                <img src="./images/boxes/rev-5.gif" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services blur-bg p-t-0">
+        <div class="animate-circle"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="heading">
+                        <span class="top-btn"><img src="./images/icons/cir-icon.webp" alt="img">Beneficios</span>
+                        <h3>TAMBIÉN OBTENDRÁS</h3>
+                    </div>
+                    <div class="serv-boxes">
+                        <div class="serv-box">
+                            <div class="contant">
+                                <div class="image">
+                                    <img src="./images/icons/service-1-icon.webp" alt="img" class="dark">
+                                    <img src="./images/icons/service-1-icon-light.webp" alt="img" class="light">
+                                    
+                                </div>
+                                <h4>Comunidad Activa</h4>
+                                <p>La comunidad más activa de habla hispana en relación a la inversión en criptomonedas.
+                                    Encontrarás amigos, y un entorno en el que practicar y convertirte en un inversor
+                                    experto.</p>
+                            </div>
+                        </div>
+                        <div class="serv-box">
+                            <div class="contant">
+                                <div class="image">
+                                    <img src="./images/icons/service-2-icon.webp" alt="img" class="dark">
+                                    <img src="./images/icons/service-2-icon-light.webp" alt="img" class="light">
+                                </div>
+                                <h4>Soporte 1A1</h4>
+                                <p>Contarás con un equipo de Expertos a tu disposición que te ayudarán a resolver todas
+                                    las dudas que te surjan en tu proceso de aprendizaje,</p>
+                            </div>
+                        </div>
+                        <div class="serv-box">
+                            <div class="contant">
+                                <div class="image">
+                                    <img src="./images/icons/service-3-icon.webp" alt="img" class="dark">
+                                    <img src="./images/icons/service-3-icon-light.webp" alt="img" class="light">
+                                </div>
+                                <h4>Actualizaciones de por vida</h4>
+                                <p>Como miembro de Onchain Mastery tendrás acceso a todas las actualizaciones que el
+                                    equipo crea necesarias, de esta manera podrás estar al tanto de todas las novedades
+                                    del mercado de las criptomonedas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us p-t-0">
+        <div class="animate-circle"></div>
+        <div class="blur-effect-2">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="heading">
+                        <span class="top-btn"><img src="./images/icons/cir-icon.webp" alt="img">Forma</span>
+                        <h3>RELLENA ESTE FORMULARIO PARA SER CONSIDERADO</h3>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="heading">
+                                <h3>COMENZAR</h3>
+                            </div>
+                            <input type="text" placeholder="Name">
+                            <input type="email" required placeholder="Email">
+                            <input type="number" required placeholder="Phone Number">
+                            <input type="text" placeholder="Region/City">
+                            <textarea name="Message" id="text" placeholder="Message"></textarea>
+                            <button type="submit" class="btn-1 submit-btn"><span>Submit now</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial blur-bg d-none">
+        <div class="container">
+            <div class="animate-circle"></div>
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="heading">
+                        <span class="top-btn"><img src="./images/icons/cir-icon.webp" alt="img">Reseñas</span>
+                        <h3>ESTO OPINAN NUESTROS
+                            <br>INVERSORES
+                        </h3>
+                    </div>
+                    <div class="test-boxes owl-carousel home-slider">
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-1.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-3.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-4.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-5.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-6.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-7.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-8.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-9.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-10.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-11.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-12.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                        <div class="test-box">
+                            <div class="head"><img src="./images/boxes/riv-head.webp" alt="img"></div>
+                            <div class="clint-img">
+                                <img src="./images/boxes/rv-s-2.webp" alt="img">
+                                <div class="h4">Cecelia Evans <span>27 April, 2024</span></div>
+                            </div>
+                            <p>“Choosing Onchain Capital was the best decision we made for our startup. The flexibility
+                                of their pricing plans allowed us to scale"</p>
+                            <div class="stars">
+                                <img src="./images/icons/stars.webp" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="shadow-blur"></div>
+        <div class="blur-effect">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="animate-circle"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="heading">
+                        <span class="top-btn"><img src="./images/icons/cir-icon.webp" alt="img">FAQs</span>
+                        <h2>PREGUNTAS FRECUENTES</h2>
+                    </div>
+                    <div class="acc-sin js-acc-single">
+                        <div class="acc-sin-item js-acc-item">
+                            <div class="acc-title js-trigger">
+                                <h5>¿Qué incluye Onchain Mastery?</h5>
+                            </div>
+                            <div class="acc-content">
+                                <p>Nuestra visión es a largo plazo, es por esto motivo que no dejamos acceder a todas
+                                    las personas. Como dato curioso solo entran el 4,7% de las solicitudes de acceso
+                                    cuando abrimos plazas.
+                                    Por lo que si buscamos resultados a largo plazo tu acceso a Onchain Mastery a la
+                                    plataforma formativa será vitalicio.</p>
+                            </div>
+                        </div>
+                        <div class="acc-sin-item js-acc-item">
+                            <div class="acc-title js-trigger">
+                                <h5>¿Cuánto tiempo de acceso tendré en Onchain Mastery?</h5>
+                            </div>
+                            <div class="acc-content">
+                                <p>Nuestra visión es a largo plazo, es por esto motivo que no dejamos acceder a todas
+                                    las personas. Como dato curioso solo entran el 4,7% de las solicitudes de acceso
+                                    cuando abrimos plazas.
+                                    Por lo que si buscamos resultados a largo plazo tu acceso a Onchain Mastery a la
+                                    plataforma formativa será vitalicio.</p>
+                            </div>
+                        </div>
+                        <div class="acc-sin-item js-acc-item">
+                            <div class="acc-title js-trigger">
+                                <h5>¿Cómo funciona la garantía de 14 días?</h5>
+                            </div>
+                            <div class="acc-content">
+                                <p>Nuestra visión es a largo plazo, es por esto motivo que no dejamos acceder a todas
+                                    las personas. Como dato curioso solo entran el 4,7% de las solicitudes de acceso
+                                    cuando abrimos plazas.
+                                    Por lo que si buscamos resultados a largo plazo tu acceso a Onchain Mastery a la
+                                    plataforma formativa será vitalicio.</p>
+                            </div>
+                        </div>
+                        <div class="acc-sin-item js-acc-item">
+                            <div class="acc-title js-trigger">
+                                <h5>Aún no tengo experiencia ni resultados. ¿Es Onchain Mastery para mí?</h5>
+                            </div>
+                            <div class="acc-content">
+                                <p>Nuestra visión es a largo plazo, es por esto motivo que no dejamos acceder a todas
+                                    las personas. Como dato curioso solo entran el 4,7% de las solicitudes de acceso
+                                    cuando abrimos plazas.
+                                    Por lo que si buscamos resultados a largo plazo tu acceso a Onchain Mastery a la
+                                    plataforma formativa será vitalicio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://sandbox.vciwork.com/codepenstuff/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>

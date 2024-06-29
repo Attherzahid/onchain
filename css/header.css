@@ -1,0 +1,57 @@
+header{
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+header .logo-area{
+    width: 202px;
+    display: flex;
+    margin: 0 auto;
+}
+header .logo-area img{
+    width: 100%;
+    height: auto;
+}
+header.sticky .logo-area {
+    width: 185px;
+    display: flex;
+    margin: 0 auto;
+}
+@keyframes menu_sticky {
+    0%   {margin-top:-240px;}
+    50%  {margin-top: -90px;}
+    100% {margin-top: 0;}
+    }
+header.sticky {
+    z-index:99999; 
+    animation-name:menu_sticky; 
+    animation-duration: 0.60s; 
+    animation-timing-function:ease-out; 
+    box-shadow:0 0 5px 0px rgba(0, 0, 0, 0.49); 
+    -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.49);
+    background-color: #ffffff1e;
+    padding: 20px 0;
+    backdrop-filter: blur(5px);
+}
+.sticky::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: b-border 3s 1 linear;
+}
+@keyframes b-border {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
